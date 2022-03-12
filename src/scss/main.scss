@@ -1,3 +1,11 @@
+@import "reset";
+@import "colors";
+@import "mixins";
 body{
   background-color: cornflowerblue;
+}
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  color:$main-logo-color
 }
