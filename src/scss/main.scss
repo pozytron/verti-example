@@ -5,7 +5,37 @@ body{
   background-color: cornflowerblue;
 }
 
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 h1{
   font-family: 'Open Sans', sans-serif;
-  color:$main-logo-color
+  color:$main-logo-color;
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include tablet{
+    justify-content: space-between;
+  }
+  .logo {
+    background-color: $main-logo-color;
+    display: inline-block;
+  }
+}
+.menu{
+  display:none;
+
+  @include tablet{
+    display:flex
+  }
+
+  .menu__item{
+    padding:1em;
+  }
 }

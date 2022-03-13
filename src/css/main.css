@@ -1,4 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
 body {
   background-color: cornflowerblue;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #FC4887;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+}
+header .logo {
+  background-color: #FC4887;
+  display: inline-block;
+}
+
+.menu {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+}
+.menu .menu__item {
+  padding: 1em;
 }
 /*# sourceMappingURL=main.css.map */
