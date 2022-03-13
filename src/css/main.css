@@ -8,18 +8,31 @@ ul, ol {
   list-style: none;
 }
 
+button {
+  border: none;
+  background: none;
+  border-radius: 0.25em;
+}
+
 body {
-  background-color: cornflowerblue;
+  background-color: #E4E4E4;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
+  padding: 1em;
 }
 
-h1 {
-  font-family: "Open Sans", sans-serif;
-  color: #FC4887;
+.logo {
+  font-family: "Oleo Script", sans-serif;
+  color: white;
+  padding: 0 0.35em;
+  border-radius: 0.25em;
+  letter-spacing: 2px;
+  font-size: 2em;
 }
 
 header {
@@ -36,16 +49,87 @@ header .logo {
   background-color: #FC4887;
   display: inline-block;
 }
-
-.menu {
+header .menu {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  .menu {
+  header .menu {
     display: flex;
   }
 }
-.menu .menu__item {
+header .menu .menu__item {
+  padding: 0.5em 1em;
+  font-weight: bold;
+  border-radius: 0.25em;
+}
+header .menu .menu__item--active {
+  background-color: #444444;
+  color: #E4E4E4;
+}
+
+.welcome {
+  background-color: white;
   padding: 1em;
+  margin-top: 1em;
+  border-radius: 0.25em;
+}
+@media only screen and (min-width: 768px) {
+  .welcome {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+  }
+}
+.welcome .welcome__text {
+  text-align: center;
+  padding: 1em 2em;
+}
+@media only screen and (min-width: 768px) {
+  .welcome .welcome__text {
+    text-align: left;
+    max-width: 430px;
+  }
+}
+.welcome .welcome__text .title {
+  font-weight: 800;
+}
+.welcome .welcome__text .subtitle {
+  font-weight: 300;
+  color: rgba(68, 68, 68, 0.49);
+}
+.welcome .welcome__buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 0;
+}
+@media only screen and (min-width: 768px) {
+  .welcome .welcome__buttons {
+    width: 255px;
+  }
+}
+.welcome .welcome__buttons .button {
+  margin: 0.25em 0;
+  padding: 0.5em 0;
+  font-weight: 800;
+}
+@media only screen and (min-width: 768px) {
+  .welcome .welcome__buttons .button {
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+  }
+}
+.welcome .welcome__buttons .button-primary {
+  background-color: #1691C3;
+  color: white;
+}
+.welcome .welcome__buttons .button-secondary {
+  background-color: #E4E4E4;
+  color: #444444;
 }
 /*# sourceMappingURL=main.css.map */

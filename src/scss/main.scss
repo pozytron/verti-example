@@ -1,41 +1,138 @@
 @import "reset";
 @import "colors";
 @import "mixins";
-body{
-  background-color: cornflowerblue;
+
+body {
+  background-color: $main-background-color;
+  font-family: "Open Sans", sans-serif;
+  color: $main-text-color;
 }
 
-.container{
+.container {
   max-width: 960px;
   margin: 0 auto;
+  padding: 1em;
 }
 
-h1{
-  font-family: 'Open Sans', sans-serif;
-  color:$main-logo-color;
+.logo {
+  font-family: 'Oleo Script', sans-serif;
+  color: white;
+  padding: 0 0.35em;
+  border-radius: 0.25em;
+  letter-spacing: 2px;
+  font-size: 2em;
 }
-
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  @include tablet{
+  @include tablet {
     justify-content: space-between;
   }
+
   .logo {
     background-color: $main-logo-color;
     display: inline-block;
   }
-}
-.menu{
-  display:none;
 
-  @include tablet{
-    display:flex
+  .menu {
+    display: none;
+
+    @include tablet {
+      display: flex
+    }
+
+    .menu__item {
+      padding: 0.5em 1em;
+      font-weight: bold;
+      border-radius: 0.25em;
+    }
+
+    .menu__item--active {
+      background-color: $main-text-color;
+      color: $main-background-color
+    }
+  }
+}
+
+.welcome {
+  background-color: white;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 0.25em;
+  @include tablet {
+   display: flex;
+    justify-content: space-between;
+  padding: 2em;
+  }
+  .welcome__text {
+    text-align: center;
+    padding: 1em 2em;
+
+
+    @include tablet {
+      text-align: left;
+      max-width: 430px;
+    }
+
+    .title {
+      font-weight: 800;
+    }
+
+    .subtitle {
+      font-weight: 300;
+      color: $secondary-text-color
+    }
   }
 
-  .menu__item{
-    padding:1em;
+  .welcome__buttons {
+    //flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0;
+    @include tablet {
+      width: 255px;
+    }
+
+
+    .button {
+      margin: 0.25em 0;
+      padding: 0.5em 0;
+      font-weight: 800;
+      @include tablet {
+        font-size: 1.5em;
+        padding: 0.5em 1em;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1em;
+      }
+    }
+    .button-primary{
+      background-color: $button-border-color;
+      color: white;
+    }
+    .button-secondary{
+      background-color: $main-background-color;
+      color: $main-text-color;
+    }
+
+  }
+}
+
+.portfolio{
+  .portfolio__item{
+    .portfolio__item__thumbnail{
+      // obrazek
+    }
+    .portfolio__item__header{
+      // tytuł i podtytuł
+    }
+    .portfolio__item__description{
+  // opis
+    }
   }
 }
