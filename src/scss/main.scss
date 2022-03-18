@@ -36,6 +36,35 @@ header {
     display: inline-block;
   }
 
+  #hamburger{
+
+    display: none;
+    &:checked {
+      ~ .menu {
+        display: flex;
+      }
+    }
+  }
+
+.hamburger__toggle{
+  position: fixed;
+  top:0;
+  left: 0;
+  padding: 1em;
+  span {
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin-bottom: 3px;
+    background-color: $main-logo-color;
+    transition: 0.3s all ease-in-out;
+    @include tablet{
+      display: none;
+    }
+  }
+}
+
+
   .menu {
     display: none;
 
@@ -44,6 +73,7 @@ header {
     }
 
     .menu__item {
+
       padding: 0.5em 1em;
       font-weight: bold;
       border-radius: 0.25em;
@@ -167,4 +197,32 @@ header {
       padding: 0 2em 2em 2em;
     }
   }
+}
+
+
+section{
+  figure {
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+    position: relative;
+    width: 100%;
+
+    iframe {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .bg-cover {
+    width: 100%;
+    height: 100vh;
+    background-image: url("image.png");
+    background-size: cover; /* contain, 100% auto */
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
 }

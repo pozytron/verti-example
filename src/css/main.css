@@ -49,6 +49,31 @@ header .logo {
   background-color: #FC4887;
   display: inline-block;
 }
+header #hamburger {
+  display: none;
+}
+header #hamburger:checked ~ .menu {
+  display: flex;
+}
+header .hamburger__toggle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+}
+header .hamburger__toggle span {
+  width: 20px;
+  height: 2px;
+  display: block;
+  margin-bottom: 3px;
+  background-color: #FC4887;
+  transition: 0.3s all ease-in-out;
+}
+@media only screen and (min-width: 768px) {
+  header .hamburger__toggle span {
+    display: none;
+  }
+}
 header .menu {
   display: none;
 }
@@ -169,5 +194,29 @@ header .menu .menu__item--active {
 .portfolio .portfolio__item .portfolio__item__description {
   line-height: 2em;
   padding: 0 2em 2em 2em;
+}
+
+section figure {
+  height: 0;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  position: relative;
+  width: 100%;
+}
+section figure iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+section .bg-cover {
+  width: 100%;
+  height: 100vh;
+  background-image: url("image.png");
+  background-size: cover;
+  /* contain, 100% auto */
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */
