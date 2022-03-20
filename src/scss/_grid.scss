@@ -1,0 +1,23 @@
+$columns: 12;
+$baseCol: calc(100% / $columns);
+
+
+.row {
+   display: flex;
+   [class*="col-"] {
+      // to avoid div collapse
+      width: $baseCol;
+       // guttters
+      margin:.5em ;
+   }
+   @for $i from 1 through $columns {
+      .col-#{$i} {
+        width: $baseCol * $i;
+      }
+   }
+   @media (min-width: 0) {
+      [class*='col-'] {
+      width: 100%;
+      }
+   }
+}

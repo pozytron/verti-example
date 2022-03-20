@@ -20,11 +20,20 @@
 <body>
 
 <div class="container">
+
+    <input type="checkbox" id="hamburger">
+    <label for="hamburger" class="hamburger_toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
     <header>
+        
         <div class="logo">
             <h2>Verti</h2>
         </div>
         <nav>
+            
             <ul class="menu">
                 <li class="menu__item menu__item--active">Welcome</li>
                 <li class="menu__item">Dropdown</li>
@@ -52,21 +61,178 @@
         </div>
     </div>
 
-    <section class="portfolio">
-        <article class="portfolio__item">
-            <div class="portfolio__item__thumbnail"></div>
+    <section class="portfolio row">
+        <article class="portfolio__item col-4">
+            <div class="portfolio__item__thumbnail pic01-icon">
+            </div>
             <header class="portfolio__item__header">
                 <h3>An interesting title</h3>
-                <h4>This is also an interesting subtitle</h4>
+                <h4 class="portfolio__item__description">This is also an interesting subtitle</h4>
+            </header>
+            <p class="portfolio__item__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi laboriosam odit sint.
+            </p>
+        </article>
+
+        <article class="portfolio__item col-4">
+            <div class="portfolio__item__thumbnail pic02-icon"></div>
+            <header class="portfolio__item__header">
+                <h3>An interesting title</h3>
+                <h4 class="portfolio__item__description">This is also an interesting subtitle</h4>
+            </header>
+            <p class="portfolio__item__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi laboriosam odit sint.
+            </p>
+        </article>
+
+        <article class="portfolio__item col-4">
+            <div class="portfolio__item__thumbnail pic03-icon"></div>
+            <header class="portfolio__item__header">
+                <h3>An interesting title</h3>
+                <h4 class="portfolio__item__description" >This is also an interesting subtitle</h4>
             </header>
             <p class="portfolio__item__description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi laboriosam odit sint.
             </p>
         </article>
     </section>
+
+    <section class="kontakt">
+        <div class="kontakt__first">
+            <h2 class="kontakt__title">So what's this all about?</h2>
+            <p class="kontakt__text">
+                This is <strong>Verti</strong>, a free and fully responsive HTML5site template by <a href="#">HTMLS UP</a> Verti is released under the <a href="#">Creative Commons
+                Attribution license</a>, so feel free to use it for any personal or commercial project you might have going on (just don't
+                forget to credit us for the design!)
+            </p>
+            <p class="kontakt__text">
+                Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper bibendum ipsum, et tristique
+                augue fringilla eu. Vivamus id risus vel dolor auctor euismod quis eget mi. Etiam eu ante risus.
+                Aliquam erat volutpat. Aliquam luctus mattis lectus sit amet phasellus quam turpis.
+            </p>
+            <button class="button button-primary">
+                <i class="fas fa-question-circle"></i>
+                <span>Continue Reading</span>
+            </button>
+        </div>
+
+        <div class="kontakt__line"></div>
+
+        <div class="kontakt__second">
+            <h2 class="kontakt__title">
+                Interesting stuff
+            </h2>
+            <div class="grid">
+            <div class="row">
+                <div class="pic04-icon col-6"></div>
+                <div class="pic05-icon col-6"></div>
+            </div>
+            <div class="row">
+                <div class="pic06-icon col-6"></div>
+                <div class="pic07-icon col-6"></div>
+            </div>
+            </div>
+            <button class="button button-primary">
+                <i class="fas fa-file-alt"></i>
+                <span>More</span>
+            </button>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="footer__grid">
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li class="footer__kontakt--title">
+                            <p>Random stuff</p>
+                        </li>
+                    <li>
+                        <a href="#">Etiam feugiat condimentum</a>
+                    </li>
+                    <li>
+                        <a href="#">Aliquam imperdiet suscipit odio</a>
+                    </li>
+                    <li>
+                        <a href="#">Sed porttitor cras in erat nec</a>
+                    </li>
+                    <li>
+                        <a href="#">Felis varius pellentesque potenti</a>
+                    </li>
+                    <li>
+                        <a href="#">Nullam scelerisque blandit leo</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li class="footer__kontakt--title">
+                            <p>Random stuff</p>
+                        </li>
+                        <li>
+                            <a href="#">Etiam feugiat condimentum</a>
+                        </li>
+                        <li>
+                            <a href="#">Aliquam imperdiet suscipit odio</a>
+                        </li>
+                        <li>
+                            <a href="#">Sed porttitor cras in erat nec</a>
+                        </li>
+                        <li>
+                            <a href="#">Felis varius pellentesque potenti</a>
+                        </li>
+                        <li>
+                            <a href="#">Nullam scelerisque blandit leo</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <hr>
+
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li class="footer__kontakt--title"><p>Random stuff</p></li>
+                        <li>
+                            <a href="#">Etiam feugiat condimentum</a>
+                        </li>
+                        <li>
+                            <a href="#">Aliquam imperdiet suscipit odio</a>
+                        </li>
+                        <li>
+                            <a href="#">Sed porttitor cras in erat nec</a>
+                        </li>
+                        <li>
+                            <a href="#">Felis varius pellentesque potenti</a>
+                        </li>
+                        <li>
+                            <a href="#">Nullam scelerisque blandit leo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    
+                    <p class="footer__kontakt--title">Contact Us</p>
+                    
+                    <div class="footer__images">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-dribbble"></i>
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                    <p>1234 Fictional Road</p>
+                    <p>Nashvile, TN 00000</p>
+                    <p>(800)555-0000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
-
-
 </body>
 
 </html>

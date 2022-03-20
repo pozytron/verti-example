@@ -1,0 +1,27 @@
+@each $pic in pic01,pic02,pic03,pic04,pic05,pic06,pic07, {
+.#{$pic}-icon {
+   background: url('../assets/#{$pic}.jpg') 0 0 / 100% 100%;
+   background-repeat: no-repeat;
+   border-radius: 10px;
+}
+}
+.button {
+      margin: 0.25em 0;
+      padding: 0.5em 0;
+      font-weight: 800;
+      width: 100%;
+}
+.button-primary{
+      background-color: $button-border-color;
+      color: white;
+}
+.button-secondary{
+      background-color: $main-background-color;
+      color: $main-text-color;
+}
+%burger{
+      display: block;
+      width: 30px;
+      height: 5px;
+      background-color: $secondary-text-color;             
+}
